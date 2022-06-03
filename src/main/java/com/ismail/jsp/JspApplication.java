@@ -12,18 +12,18 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  *
  */
 @SpringBootApplication(scanBasePackages = "com.ismail.jsp")
-public class Application extends SpringBootServletInitializer 
+public class JspApplication extends SpringBootServletInitializer 
 {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) 
     {
-        return builder.sources(Application.class);
+        return builder.sources(JspApplication.class);
     }
 
     
     public static void main(String[] args)
     {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(JspApplication.class, args);
     }
 
 }
